@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Newton's method for solving equation of 'n' order</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <h1>Newton's method for solving equation of 'n' order</h1>
+<p><strong><em>May 18th, 2019</em> by Aziz Lokhandwala</strong></p>
+<h2>Abstract: This is method for solving polynomial equations of 'n' order</h2>
+
+<p>Let α1,α2 ,...,αn be the roots of the equation:
+$$f(x) = A(n)X(n) + A(n-1)X(n-1) + ... + A(1) x + A(0) = 0$$
+We want to find:
+    $$S(k) = {α1}^k +{α2}^k +...+{αn}^k$$</p>
+    <p>Here, k = 1,2,3,4,5,6,...</p>
+<p>Now, as α1,α2 ,...,αn are roots of equation, thus we can write:
+$$f(x) = An(x - α1)(x - α2)...(x - αn)$$
+$$ln |f(x)| = ln|An| + ln | x – α1 | + ln | x – α2 | + ... + ln | x – αn |$$
+Now, differentiating above equation we have,
+$${f'(x) \over f(x)} = {1\over x – α1} + {1\over x – α2}+... + {1\over x – αn}$$
+Now, corelating above equation with term,
+$${1 \over (1-x)} = 1+x+x^2 +x^3 +...$$
+$${f'(x) \over f(x)} = n({1 \over x}) + (α1+α2+...+αn)({1 \over x^2}) + ({α1^2}+{α2^2}+...+{αn^2})({1 \over x^3}) + ...$$</p>
+    <p><em>Result: Coefficient of \(1 \over x^{k+1}\) in expansion of \(f'(x) \over f(x)\) is \(S(k) = {α1}^k +{α2}^k +...+{αn}^k \)</em></p>
+<p><strong>Question for you: </strong>
+Let,
+$$f(x) = (x-1)^3$$
+Find S(1), S(2), S(3), S(4), S(5),S(6)
+</p>
+<p><strong>Post your answer to me with hashtag <em>#soltoaziz</em> at <em>https://instagram.com/azizl</em> or you can mail me at <em>perkanulla@gmail.com</em></strong></p>
+    
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
+  
+
+   
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+
+
+</body>
+
+</html>
